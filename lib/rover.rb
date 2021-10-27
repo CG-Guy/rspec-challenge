@@ -3,7 +3,7 @@ require_relative "./north"
 require_relative "./east"
 require_relative "./south"
 require_relative "./west"
-require_relative "./input"
+#require_relative "./input"
 class Rover
 
   def initialize(current_position, init_direction)
