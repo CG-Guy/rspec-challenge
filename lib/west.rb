@@ -1,5 +1,5 @@
 class West
-  #Looking West, North is on the Right
+  #Looking west, North is on the right
   def right_turn
     North.new
   end
@@ -10,8 +10,8 @@ class West
 
   #based on grid if it points it move along y
   def move(current_position)
-    x = current_position[0]
-    y = current_position[1] - 1
+    x = current_position[0] 
+    y = current_position[1] -1 
 
     [x, y]
   end

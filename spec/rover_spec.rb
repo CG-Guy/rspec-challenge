@@ -6,7 +6,9 @@ RSpec.describe Rover do
   let(:rover) { described_class.new(current_position, direction) }
 
   describe '#right_turn' do
+    #subject { rover.right_turn }
     context 'when facing North' do
+
       it 'turns east' do
         expect(rover.right_turn).to be_a East
       end
@@ -41,7 +43,7 @@ RSpec.describe Rover do
   describe '#move' do
     context 'when facing north' do
       it 'move north' do
-        expect(rover.move).to eq [1, 0]
+        expect(rover.move).to eq [0, 1]
       end
     end
   end
@@ -49,7 +51,7 @@ RSpec.describe Rover do
   describe '#move' do
     context 'when facing west' do
       it 'move west' do
-        expect(rover.move).to eq [0, -1]
+        expect(rover.move).to eq [0, 1]
       end
     end
   end
